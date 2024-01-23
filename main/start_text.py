@@ -7,9 +7,9 @@ from config import ADMIN
 async def start_cmd(bot, msg):
     txt="This is personal use bot 🙏. Do you want your own bot? 👇 Click the source code to deploy"
     btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/MrMKN/Simple-Rename-Bot")
+        InlineKeyboardButton("🤖 SOURCE CODE", url="https://t.me/funnyzilla")
         ],[
-        InlineKeyboardButton("🖥️ How To Deploy", url="https://youtu.be/oc847WvOUaI")
+        InlineKeyboardButton("🖥️ How To Deploy", url="https://t.me/ContentmebkpBot")
     ]])
     if msg.from_user.id != ADMIN:
         return await msg.reply_text(text=txt, reply_markup=btn, disable_web_page_preview = True)
@@ -49,7 +49,7 @@ async def about(bot, msg):
     me=await bot.get_me()
     Master=f"<a href=https://t.me/funnyzilla>Movie Request Group</a>"  
     Source="<a href=https://t.me/funnyzilla>Click Here</a>"
-    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/ContentmebkpBot>gunnyzilla</a>\nBot Updates: <a href=https://t.me/+ghOT7ZEifrk5MGE1>Funnyzilla Botz</a>\nMy Master's: {Master}\nSource Code: {Source}</b>"                 
+    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/ContentmebkpBot>funnyzilla</a>\nBot Updates: <a href=https://t.me/+ghOT7ZEifrk5MGE1>Funnyzilla Botz</a>\nMy Master's: {Master}\nSource Code: {Source}</b>"                 
     button= [[        
         InlineKeyboardButton("🚫 Close", callback_data="del"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
